@@ -70,7 +70,7 @@ export default function App() {
       }
     ],
     {
-      basename: "/Movie-Explorer/",
+      basename: "/Movie-Explorer",
     }
   );
 

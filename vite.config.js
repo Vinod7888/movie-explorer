@@ -1,4 +1,7 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
 export default defineConfig({
-  base: "/Movie-Explorer/",
-  plugins: [tailwindcss()],
-});
+  plugins: [react()],
+  base: '/Movie-Explorer/',   // <-- IMPORTANT
+})
