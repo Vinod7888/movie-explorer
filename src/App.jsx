@@ -55,7 +55,12 @@ export default function App() {
         </>
       )
     }
-  ])
+  ],
+    {
+      base: '/Movie-Explorer/',
+
+    }
+  )
 
   useEffect(() => {
     AOS.init({
