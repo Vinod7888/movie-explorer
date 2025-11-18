@@ -1,22 +1,18 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
-import { useEffect } from 'react'
-import React from 'react'
-import Header from './components/Header'
-import Home from './components/Home'
-import MovieDetails from './components/MovieDetails'
-import Footer from './components/Footer'
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Movies from './pages/movies'
-import About from './pages/About'
+import React, { useEffect } from 'react';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './components/Home';
+import MovieDetails from './components/MovieDetails';
+import Movies from './pages/movies';
+import About from './pages/About';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function App() {
-
   useEffect(() => {
-    AOS.init({
-      duration: 800,
-      offset: 100,
-    });
+    AOS.init({ duration: 800, offset: 100 });
   }, []);
 
   return (
