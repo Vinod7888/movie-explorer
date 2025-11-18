@@ -13,7 +13,7 @@ export default function Home() {
 
   const fatchData = async (value) => {
     setLoading(true);
-    const response = await fetch(`http://www.omdbapi.com/?apikey=3d33f7ad&s=${value}`)
+    const response = await fetch(`https://www.omdbapi.com/?apikey=3d33f7ad&s=${value}`)
     const data = await response.json();
     Setmovie(data.Search || [])
     setLoading(false);

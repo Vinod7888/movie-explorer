@@ -11,7 +11,7 @@ export default function MovieDetails() {
     useEffect(
         () => {
             const getMovie = () => {
-                axios.get(`http://www.omdbapi.com/?apikey=3d33f7ad&i=${id}`).then(
+                axios.get(`https://www.omdbapi.com/?apikey=3d33f7ad&i=${id}`).then(
                     (success) => {
                         // console.log(success.data)
                         Setmovie(success.data)
