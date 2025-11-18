@@ -27,7 +27,7 @@ export default function App() {
         ),
       },
       {
-        path: "/movie/:id",
+        path: "movie/:id",
         element: (
           <>
             <Header />
@@ -37,7 +37,7 @@ export default function App() {
         ),
       },
       {
-        path: "/about",
+        path: "about",
         element: (
           <>
             <Header />
@@ -47,7 +47,7 @@ export default function App() {
         ),
       },
       {
-        path: "/movies",
+        path: "movies",
         element: (
           <>
             <Header />
